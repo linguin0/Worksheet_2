@@ -2,15 +2,15 @@ try:
     Grade = int(input("Enter your numerical grade > "))
     match Grade:
         case Grade if Grade >= 80:
-            print("You got an A!")
+            print("Your grade is: A")
         case Grade if Grade <= 79 and Grade >= 60:
-            print("You got a B!")
+            print("Your grade is: B")
         case Grade if Grade <= 59 and Grade >= 50:
-            print("You got a C!")
+            print("Your grade is: C")
         case Grade if Grade <= 49 and Grade >= 40:
-            print("You got a D!")
+            print("Your grade is: D")
         case Grade if Grade <= 39 and Grade >= 0:
-            print("You got an F")
+            print("Your grade is: F")
         case _:
             print("Error: Grades must be between 0 and 100")
 except:
